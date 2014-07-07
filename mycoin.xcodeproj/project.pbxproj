@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		E9045CAA187541FC00A10A31 /* send_quote.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send_quote.c; sourceTree = "<group>"; };
+		E90CE414187DABDE00CE60D5 /* Publisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Publisher.h; sourceTree = "<group>"; };
+		E90CE415187DABDE00CE60D5 /* RedisPublisher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RedisPublisher.cpp; sourceTree = "<group>"; };
+		E90CE416187DABDE00CE60D5 /* RedisPublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedisPublisher.h; sourceTree = "<group>"; };
+		E90CE417187DABDE00CE60D5 /* RoutineQuotation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RoutineQuotation.cpp; sourceTree = "<group>"; };
+		E90CE418187DABDE00CE60D5 /* RoutineQuotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutineQuotation.h; sourceTree = "<group>"; };
+		E92F8D6F186C8CCC00F5E245 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		E92F8D77186C8CCC00F5E245 /* DatabaseVoucher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DatabaseVoucher.cpp; sourceTree = "<group>"; };
+		E92F8D78186C8CCC00F5E245 /* DatabaseVoucher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseVoucher.h; sourceTree = "<group>"; };
+		E92F8D7F186C8DA600F5E245 /* MycoinApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MycoinApplication.cpp; sourceTree = "<group>"; };
+		E92F8D80186C8DA600F5E245 /* MycoinApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MycoinApplication.h; sourceTree = "<group>"; };
+		E92F8D84186C8FB400F5E245 /* LevelOfQuoteQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelOfQuoteQueue.h; sourceTree = "<group>"; };
+		E92F8D85186C8FB400F5E245 /* MatchStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MatchStrategy.cpp; sourceTree = "<group>"; };
+		E92F8D86186C8FB400F5E245 /* MatchStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchStrategy.h; sourceTree = "<group>"; };
+		E92F8D87186C8FB400F5E245 /* match_quote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = match_quote.h; sourceTree = "<group>"; };
+		E92F8D8C186C8FB400F5E245 /* QuoteQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuoteQueue.cpp; sourceTree = "<group>"; };
+		E92F8D8D186C8FB400F5E245 /* QuoteQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuoteQueue.h; sourceTree = "<group>"; };
+		E92F8D91186C8FB400F5E245 /* lost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lost.h; sourceTree = "<group>"; };
+		E92F8D93186C917400F5E245 /* mainloop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mainloop.cpp; sourceTree = "<group>"; };
+		E92F8D94186C919400F5E245 /* thread_fn.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = thread_fn.cpp; sourceTree = "<group>"; };
+		E945E9981865554A00745B38 /* test */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test; sourceTree = "<group>"; };
+		E946214B185467F200CD6686 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		E94996A11858339200E6CB77 /* quote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quote.h; sourceTree = "<group>"; };
+		E952BCB5187D1C8400A7A405 /* MessageConvertor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageConvertor.h; sourceTree = "<group>"; };
+		E952BCB6187D1C8400A7A405 /* message.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = message.c; sourceTree = "<group>"; };
+		E952BCB7187D1C8400A7A405 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
+		E952BCBA187D1C8400A7A405 /* message.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = message.proto; sourceTree = "<group>"; };
+		E952BCBE187D2D9F00A7A405 /* MessageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageProcessor.h; sourceTree = "<group>"; };
+		E952BCC0187D435A00A7A405 /* message_extend.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = message_extend.c; sourceTree = "<group>"; };
+		E952BCC1187D438700A7A405 /* message_extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = message_extend.h; sourceTree = "<group>"; };
+		E9580DB2187AF7E900272D0A /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		E9580DB4187B043C00272D0A /* match_quote.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = match_quote.cpp; sourceTree = "<group>"; };
+		E95C9BFD186EC4F00099CBB8 /* BizAccount.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BizAccount.cpp; sourceTree = "<group>"; };
+		E95C9BFE186EC4F00099CBB8 /* BizAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BizAccount.h; sourceTree = "<group>"; };
+		E95C9BFF186EE5AF0099CBB8 /* Account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Account.cpp; sourceTree = "<group>"; };
+		E95DB40E18699D4F007E69DB /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		E983A45D188154C100476E97 /* RedisVoucher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RedisVoucher.cpp; sourceTree = "<group>"; };
+		E983A45E188154C100476E97 /* RedisVoucher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedisVoucher.h; sourceTree = "<group>"; };
+		E9BF55BF1860088A007A9B41 /* demo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = demo.c; sourceTree = "<group>"; };
+		E9BF55C01860088A007A9B41 /* demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = demo.h; sourceTree = "<group>"; };
+		E9C279B31859A52300408DD4 /* readerwriterqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readerwriterqueue.h; sourceTree = "<group>"; };
+		E9C279B41859A52A00408DD4 /* atomicops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atomicops.h; sourceTree = "<group>"; };
+		E9D13922187E74B5007EB391 /* ContractNoteProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ContractNoteProcessor.cpp; path = account/ContractNoteProcessor.cpp; sourceTree = "<group>"; };
+		E9D13926187E8091007EB391 /* AccountExchangeProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountExchangeProcessor.h; path = ../AccountExchangeProcessor.h; sourceTree = "<group>"; };
+		E9D13927187E8096007EB391 /* ContractNoteProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContractNoteProcessor.h; sourceTree = "<group>"; };
+		E9D13928187E809D007EB391 /* QuoteProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuoteProcessor.h; sourceTree = "<group>"; };
+		E9D13929187E80A2007EB391 /* WithdrawProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawProcessor.h; sourceTree = "<group>"; };
+		E9D1392A187E851A007EB391 /* AccountExchangeProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AccountExchangeProcessor.cpp; sourceTree = "<group>"; };
+		E9D1392C187E85A0007EB391 /* QuoteProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = QuoteProcessor.cpp; path = account/QuoteProcessor.cpp; sourceTree = "<group>"; };
+		E9D13935187EE784007EB391 /* thread_fn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thread_fn.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		E9045CA8187541FC00A10A31 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				E9045CAA187541FC00A10A31 /* send_quote.c */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		E90CE413187DABDE00CE60D5 /* notify */ = {
+			isa = PBXGroup;
+			children = (
+				E90CE414187DABDE00CE60D5 /* Publisher.h */,
+				E90CE415187DABDE00CE60D5 /* RedisPublisher.cpp */,
+				E90CE416187DABDE00CE60D5 /* RedisPublisher.h */,
+				E90CE417187DABDE00CE60D5 /* RoutineQuotation.cpp */,
+				E90CE418187DABDE00CE60D5 /* RoutineQuotation.h */,
+			);
+			path = notify;
+			sourceTree = "<group>";
+		};
+		E92F8D6E186C8CCC00F5E245 /* account */ = {
+			isa = PBXGroup;
+			children = (
+				E9D1392A187E851A007EB391 /* AccountExchangeProcessor.cpp */,
+				E9D13926187E8091007EB391 /* AccountExchangeProcessor.h */,
+				E92F8D6F186C8CCC00F5E245 /* Account.h */,
+				E95C9BFF186EE5AF0099CBB8 /* Account.cpp */,
+				E983A45D188154C100476E97 /* RedisVoucher.cpp */,
+				E983A45E188154C100476E97 /* RedisVoucher.h */,
+				E92F8D77186C8CCC00F5E245 /* DatabaseVoucher.cpp */,
+				E92F8D78186C8CCC00F5E245 /* DatabaseVoucher.h */,
+				E95C9BFD186EC4F00099CBB8 /* BizAccount.cpp */,
+				E95C9BFE186EC4F00099CBB8 /* BizAccount.h */,
+			);
+			path = account;
+			sourceTree = "<group>";
+		};
+		E92F8D81186C8FB400F5E245 /* match */ = {
+			isa = PBXGroup;
+			children = (
+				E92F8D84186C8FB400F5E245 /* LevelOfQuoteQueue.h */,
+				E92F8D86186C8FB400F5E245 /* MatchStrategy.h */,
+				E92F8D85186C8FB400F5E245 /* MatchStrategy.cpp */,
+				E92F8D87186C8FB400F5E245 /* match_quote.h */,
+				E9580DB4187B043C00272D0A /* match_quote.cpp */,
+				E92F8D8C186C8FB400F5E245 /* QuoteQueue.cpp */,
+				E92F8D8D186C8FB400F5E245 /* QuoteQueue.h */,
+				E92F8D91186C8FB400F5E245 /* lost.h */,
+			);
+			path = match;
+			sourceTree = "<group>";
+		};
+		E94621321854678700CD6686 = {
+			isa = PBXGroup;
+			children = (
+				E9D13922187E74B5007EB391 /* ContractNoteProcessor.cpp */,
+				E9D13927187E8096007EB391 /* ContractNoteProcessor.h */,
+				E9D13929187E80A2007EB391 /* WithdrawProcessor.h */,
+				E952BCBE187D2D9F00A7A405 /* MessageProcessor.h */,
+				E9D1392C187E85A0007EB391 /* QuoteProcessor.cpp */,
+				E9D13928187E809D007EB391 /* QuoteProcessor.h */,
+				E9580DB2187AF7E900272D0A /* Singleton.h */,
+				E952BCB3187D1C8400A7A405 /* message */,
+				E9045CA8187541FC00A10A31 /* client */,
+				E92F8D7F186C8DA600F5E245 /* MycoinApplication.cpp */,
+				E92F8D80186C8DA600F5E245 /* MycoinApplication.h */,
+				E92F8D93186C917400F5E245 /* mainloop.cpp */,
+				E92F8D94186C919400F5E245 /* thread_fn.cpp */,
+				E9D13935187EE784007EB391 /* thread_fn.h */,
+				E92F8D6E186C8CCC00F5E245 /* account */,
+				E92F8D81186C8FB400F5E245 /* match */,
+				E90CE413187DABDE00CE60D5 /* notify */,
+				E95DB40E18699D4F007E69DB /* readme.txt */,
+				E94996A11858339200E6CB77 /* quote.h */,
+				E945E9981865554A00745B38 /* test */,
+				E9BF55BF1860088A007A9B41 /* demo.c */,
+				E9BF55C01860088A007A9B41 /* demo.h */,
+				E9C279B41859A52A00408DD4 /* atomicops.h */,
+				E9C279B31859A52300408DD4 /* readerwriterqueue.h */,
+				E946214B185467F200CD6686 /* Makefile */,
+			);
+			sourceTree = "<group>";
+		};
+		E952BCB3187D1C8400A7A405 /* message */ = {
+			isa = PBXGroup;
+			children = (
+				E952BCB5187D1C8400A7A405 /* MessageConvertor.h */,
+				E952BCC0187D435A00A7A405 /* message_extend.c */,
+				E952BCC1187D438700A7A405 /* message_extend.h */,
+				E952BCB6187D1C8400A7A405 /* message.c */,
+				E952BCB7187D1C8400A7A405 /* message.h */,
+				E952BCBA187D1C8400A7A405 /* message.proto */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		E94621371854678700CD6686 /* mycoin */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = E946213A1854678700CD6686 /* Build configuration list for PBXLegacyTarget "mycoin" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = mycoin;
+			passBuildSettingsInEnvironment = 1;
+			productName = mycoin;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		E94621331854678700CD6686 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = lx;
+			};
+			buildConfigurationList = E94621361854678700CD6686 /* Build configuration list for PBXProject "mycoin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E94621321854678700CD6686;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E94621371854678700CD6686 /* mycoin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		E94621381854678700CD6686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E94621391854678700CD6686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E946213B1854678700CD6686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E946213C1854678700CD6686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E94621361854678700CD6686 /* Build configuration list for PBXProject "mycoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E94621381854678700CD6686 /* Debug */,
+				E94621391854678700CD6686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E946213A1854678700CD6686 /* Build configuration list for PBXLegacyTarget "mycoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E946213B1854678700CD6686 /* Debug */,
+				E946213C1854678700CD6686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E94621331854678700CD6686 /* Project object */;
+}

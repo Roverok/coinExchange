@@ -1,0 +1,87 @@
+//Optional Embedded C internal options:
+//@max_repeated_length=100
+//@max_string_length=21
+
+enum security_bill_t {
+    BUY_IN_LIMIT_PRICE=0;
+    SELL_OUT_LIMIT_PRICE=1;
+    BUY_IN_MARKET_PRICE=2;
+    SELL_OUT_MARKET_PRICE=3;
+    BUY_WITHDRAW=4;
+    SELL_WITHDRAW=5;
+    ACCOUNT_CHARGE=6;
+    ACCOUNT_WITHDRAW=7;
+}
+
+enum bill_status_t{
+    STATUS_NEW=0;
+    STATUS_PROCESSED=1;
+    STATUS_ACCEPTED=2;
+    STATUS_REJECTED=3;
+    STATUS_FINISHED=4;
+    STATUS_INVALID=5;
+}
+
+enum message_type_t{
+    UNKOWN_MESSAGE=0;
+    SECURITY_QUOTE=1;
+    WITHDRAW_QUOTE=2;
+    CONTRACT_NOTE=3;
+    ACCOUNT_EXCHANGE_NOTE=4;
+}
+
+
+message SecurityQuote{
+    required message_type_t msg_type=1;
+    required security_bill_t billType=2;
+    required uint32 billId=3;
+    required uint32 occurTime=4;
+    required bill_status_t status=5;
+
+    required uint64 code=6;
+    required uint32 price=7;
+    required uint32 quality=8;
+    required uint32 guaranty=9;
+    required string client=10;
+}
+
+message WithdrawQuote{
+    required message_type_t msg_type=1;
+    required security_bill_t billType=2;
+    required uint32 billId=3;
+    required uint32 occurTime=4;
+    required bill_status_t status=5;
+
+    required uint64 code=6;
+    required uint32 refBillId=7;
+    required string client=8;
+}
+
+message ContractNote{
+    required message_type_t msg_type=1;
+    required security_bill_t billType=2;
+    required uint32 billId=3;
+    required uint32 occurTime=4;
+    required bill_status_t status=5;
+
+    required uint64 code=6;
+    required uint32 price=7;
+    required uint32 quality=8;
+    
+    required uint32 sourceBillId=9;
+    required uint32 peerBillId=10;
+    required string buyer=11;
+    required string seller=12;
+}
+
+message AccountExchangeNote{
+    required message_type_t msg_type=1;
+    required security_bill_t billType=2;
+    required uint32 billId=3;
+    required uint32 occurTime=4;
+    required bill_status_t status=5;
+
+    required uint64 code=6;
+    required uint32 quality=7;
+    required string client=8;
+}
